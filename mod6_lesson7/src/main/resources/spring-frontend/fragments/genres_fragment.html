@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html>
+<section th:fragment="genresListMenu">
+    <ul>
+        <li th:each="g : ${genresList}" >
+            <div class="Tag">
+                <a href="/genres/slug.html" th:href="'genre/' + ${g.genre.slug}" th:text="${g.genre.name}" >Лёгкое чтение</a>
+                <span class="undefined-amount"  th:text="'(' + ${g.countBooks} + ')'">(15638)</span>
+            </div>
+            <section th:include="@{fragments/genres_fragment} :: genresListMenu" th:with="genresList=${g.childs}"></section>
+        </li>
+    </ul>
+</section>
+</html>
+</html>

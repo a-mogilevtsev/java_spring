@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xmlns:pro="http://www.liquibase.org/xml/ns/pro"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+		http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+		http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd
+		http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd">
+
+    <changeSet id="1" author="Sosnina">
+        <sqlFile path="book.sql"/>
+    </changeSet>
+    <changeSet id="2" author="Sosnina">
+        <sqlFile path="book2user.sql"/>
+    </changeSet>
+    <changeSet id="3" author="Sosnina">
+        <sqlFile path="book2genre.sql"/>
+    </changeSet>
+    <changeSet id="4" author="Sosnina">
+        <sqlFile path="author.sql"/>
+    </changeSet>
+    <changeSet id="5" author="Sosnina">
+        <sqlFile path="book2author.sql"/>
+    </changeSet>
+    <changeSet id="6" author="Sosnina">
+        <sqlFile path="author_addon.sql"/>
+    </changeSet>
+</databaseChangeLog>
+
+
+
